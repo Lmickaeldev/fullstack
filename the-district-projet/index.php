@@ -1,4 +1,34 @@
 <?php
+
+use App\Autoloader;
+
+require_once"./Classes/Autoloader.php";
+Autoloader::register();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //on modifie le titre
 $title="accueil";
 //on inclut le head
