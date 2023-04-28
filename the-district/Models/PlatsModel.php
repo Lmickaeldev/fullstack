@@ -3,20 +3,25 @@ namespace App\Models;
 
 use App\Models\Model;
 
-
-class CategoriesModel extends Model{
+class PlatsModel extends Model{
 
     protected $id;
     protected $libelle;
+    protected $description;
+    protected $prix;
     protected $image;
+    protected $id_categorie;
     protected $active;
-    //un constructeur
+
     public function __construct()
     {
-    
-     $this->table= 'categories';
-    
+    $this->table='plats';    
     }
+    
+
+
+
+
 
     /**
      * Get the value of id
@@ -59,6 +64,46 @@ class CategoriesModel extends Model{
     }
 
     /**
+     * Get the value of description
+     */ 
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * Set the value of description
+     *
+     * @return  self
+     */ 
+    public function setDescription($description)
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of prix
+     */ 
+    public function getPrix()
+    {
+        return $this->prix;
+    }
+
+    /**
+     * Set the value of prix
+     *
+     * @return  self
+     */ 
+    public function setPrix($prix)
+    {
+        $this->prix = $prix;
+
+        return $this;
+    }
+
+    /**
      * Get the value of image
      */ 
     public function getImage()
@@ -74,6 +119,26 @@ class CategoriesModel extends Model{
     public function setImage($image)
     {
         $this->image = $image;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of id_categorie
+     */ 
+    public function getId_categorie()
+    {
+        return $this->id_categorie;
+    }
+
+    /**
+     * Set the value of id_categorie
+     *
+     * @return  self
+     */ 
+    public function setId_categorie($id_categorie)
+    {
+        $this->id_categorie = $id_categorie;
 
         return $this;
     }

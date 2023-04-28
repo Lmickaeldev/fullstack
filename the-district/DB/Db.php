@@ -1,6 +1,6 @@
 <?php
 //design patern singloton
-namespace App\Db;
+namespace App\DB;
 
 //on "impporte" PDO
 use PDO;
@@ -13,8 +13,8 @@ class Db extends PDO
 
     // information de connection
     private const DBHOST = 'localhost';
-    private const DBUSER = 'root';
-    private const DBPASS = '';
+    private const DBUSER = 'Lmickael';
+    private const DBPASS = 'afpa404';
     private const DBNAME = 'district';
 
     private function __construct()
